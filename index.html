@@ -1,0 +1,233 @@
+<html>
+<head>
+<title>AmiraLand</title>
+
+<div id="main">
+<style>
+
+ body {
+  background-image: url("image/pagebg.png");
+ }
+
+ body {
+  font-family: Arial, Helvetica, sans-serif;
+ }
+
+ .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #FAEBD7;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+ }
+
+ .sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #FFB6C1;
+  display: block;
+  transition: 0.3s;
+ }
+
+ .sidenav a:hover {
+  color: #FFB6C1 ;
+ }
+
+ .sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+ }
+
+ @media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+ }
+
+ #main {
+  transition: margin-left .5s;
+  padding: 20px;
+ }
+
+ img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+ <!--
+  .styling{
+  background-color:black;
+  color:lime;
+  font: bold 10px MS Sans Serif;
+  padding: 0px;
+  }
+ -->
+
+
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: black;
+   text-align: center;
+   background: rgba(76, 175, 80, 0.1);
+}
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: png;
+  color: black;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+</head>
+
+<script>
+
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft= "0";
+}
+
+  var i = 0;
+  var txt = 'Hello ! My name is Amira, welcome to my land. Here you can know more about me, the queen of AmiraLand and what actually happen in this land. If you want to browse more through this website click the navigation button on top left of the screen.';
+  var speed = 50;
+
+  function typeWriter() {
+    if (i < txt.length) {
+    document.getElementById("demo").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+    }
+  }
+
+</script>
+
+
+<body>
+
+
+<embed src="audio/bgmusic1.mp3" loop="true" autostart="true" width="2" height="0">
+</embed>
+<div id="mySidenav" class="sidenav">
+   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+   <a href="index.html">Home</a>
+   <a href="aboutme.html">About Me</a>
+   <a href="family.html">My Family</a>
+   <a href="experience.html">My Experience</a>
+   <a href="education.html">My Education</a>
+   <a href="photobook.html">Gallery</a>
+   <a href="contact.html">Contact Me</a>
+</div>
+
+<span style="font-size:25px;cursor:pointer" onclick="openNav()">&#9776; CLICK ME</span>
+
+<iframe align="right" src="http://free.timeanddate.com/clock/i7l8m23d/n1073/tlmy/tcf99/pc9f0/ftb/th2/ts1" frameborder="0" width="62" height="18"></iframe>
+
+
+<img src="image/banner1.png" alt="custom_html_banner1">
+ <a href='https://www.horando.de/en/'>Horando watches</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=c4f1463d9ccc1883c374e3e0d6c42909ef62ae5d'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/774639/t/5"></script>
+<table align="center">
+ <tr>
+  <td align="center"><embed src="flash/welcome.gif" width="80%"></embed>
+      <br>   
+      <button onclick="typeWriter()">What is this page?</button>
+      <p id="demo"></p></a>
+  </td>
+  <td rowspan="2"><img src="image/arrow3.png"></td>
+  <td rowspan="4"><img src="image/amira1origi.png" class="center"></td>
+ </tr>
+   <td></td>
+ <tr>
+  <td rowspan="7"></td>
+  </tr>
+ <tr>
+  <td></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td></td>
+   <td></td>
+ </tr>
+ <tr>
+   <td></td>
+   <td></td>
+   <td></td>
+ </tr>
+</table>
+
+<div class="footer">
+  <p>&#169; 2020 Made for IMD311</p>
+</div>
+
+<img src="image/uparrow.png" onclick="topFunction()" id="myBtn" title="Go to top" width="100" height="100">
+<script>
+var mybutton = document.getElementById("myBtn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+
+
+</body>
+</div>
+</html>
